@@ -55,6 +55,7 @@ SELECT promotion_applied,
 FROM fact_sales
 GROUP BY promotion_applied;
 ```
+![Offers](images/sql03.png)
 
 ## Key Insights
 
