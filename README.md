@@ -195,9 +195,10 @@ SQL
 -------------------------------------------
 Which city has the highest revenue? 
 -------------------------------------------
-![Revenue by Store](images/sql01.png)
 
-This chart shows total revenue by store location. Los Angeles leads significantly, indicating strong regional performance.
+![Top Products](images/sql02.png)
+
+Tablets are the most sold product by units, highlighting strong demand in the electronics category.
 
 ---
 SELECT s.store_location, SUM(f.revenue) AS revenue 
@@ -210,6 +211,9 @@ ORDER BY revenue DESC;
 ------------------------------------------------------------
 Which product has the most sales?
 -------------------------------------------------------------
+![Revenue by Store](images/sql01.png)
+
+This chart shows total revenue by store location. Los Angeles leads significantly, indicating strong regional performance.
 
 SELECT p.product_name AS PRODUCT, SUM(f.quantity_sold) AS 'Units Sold'
 FROM fact_sales f
