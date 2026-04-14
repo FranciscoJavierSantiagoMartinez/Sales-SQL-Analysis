@@ -195,7 +195,11 @@ SQL
 -------------------------------------------
 Which city has the highest revenue? 
 -------------------------------------------
+![Revenue by Store](images/sql01.png)
 
+This chart shows total revenue by store location. Los Angeles leads significantly, indicating strong regional performance.
+
+---
 SELECT s.store_location, SUM(f.revenue) AS revenue 
 FROM fact_sales f
 JOIN dim_stores s 
